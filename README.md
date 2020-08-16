@@ -12,14 +12,14 @@ Final design will be like :
 public class CreditCardOrder  : Order
 {}
 
-# >
+
 public class OnlineOrder : Order
 {}
 
-# >
+
 public class CashOrder  : Order 
 {}
-# >
+
 
 # ----------------------------------------------------------
 Order class will have a base function called 'Checkout' and this function takes different variant based on the type of the order ( namely : CreditCardOrder,OnlineOrder,CashOrder)
@@ -30,7 +30,9 @@ OnlineOrder - deals with Reservation , Payment , Notification ( all these are a 
 # 3
 CashOrder  - Can inherit the basic functionality of Order class
 
-
+# ----------------------------------------------------------
 Take a look at this code to understand this better.
 
+
+# ----------------------------------------------------------
 Finally, with the Implementation of Order class where we only have a base functionality, so we don't need to change the 'Order' class. If we have a new functionality where we have to handle new type of Order, we just need to create a new class and inherit from the base class called ' Order'
