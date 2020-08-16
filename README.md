@@ -8,7 +8,7 @@ Instead of creating the single class (called Order), we need to create multiple 
 
 Final design will be like : 
 
-# > 
+
 public class CreditCardOrder  : Order
 {}
 
@@ -19,14 +19,16 @@ public class OnlineOrder : Order
 # >
 public class CashOrder  : Order 
 {}
-
+# >
 
 Order class will have a base function called 'Checkout' and this function takes different variant based on the type of the order ( namely : CreditCardOrder,OnlineOrder,CashOrder)
 
+
+# 1
 CreditCardOrder - deals with only Charging the card
-
+# 2
 OnlineOrder - deals with Reservation , Payment , Notification ( all these are a separate function to be injected to a particular class)
-
+# 3
 CashOrder  - Can inherit the basic functionality of Order class
 
 
