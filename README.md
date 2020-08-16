@@ -21,9 +21,8 @@ public class CashOrder  : Order
 {}
 # >
 
+# ----------------------------------------------------------
 Order class will have a base function called 'Checkout' and this function takes different variant based on the type of the order ( namely : CreditCardOrder,OnlineOrder,CashOrder)
-
-
 # 1
 CreditCardOrder - deals with only Charging the card
 # 2
