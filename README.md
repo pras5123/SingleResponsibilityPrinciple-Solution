@@ -8,10 +8,15 @@ Instead of creating the single class (called Order), we need to create multiple 
 
 Final design will be like : 
 
+# 1
 public class CreditCardOrder  : Order
-{} 
+{}
+
+# 2
 public class OnlineOrder : Order
 {}
+
+# 3
 public class CashOrder  : Order 
 {}
 
